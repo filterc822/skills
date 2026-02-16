@@ -21,7 +21,7 @@ class StyleConfig:
     """样式配置类"""
     # 图片尺寸
     width: int = 900
-    height: int = 1200  # 单张图片高度，长内容会分页
+    height: int = 1600  # 单张图片高度，长内容会分页
     
     # 边距 - 增大边距以匹配目标图片
     margin_left: int = 50
@@ -43,7 +43,7 @@ class StyleConfig:
     h1_font_size: int = 52
     h2_font_size: int = 44
     h3_font_size: int = 40
-    body_font_size: int = 38
+    body_font_size: int = 36
     code_font_size: int = 28
     small_font_size: int = 26
     
@@ -773,7 +773,7 @@ def main():
     parser.add_argument('-o', '--output', help='输出目录', default=None)
     parser.add_argument('-n', '--name', help='输出文件基础名', default=None)
     parser.add_argument('-W', '--width', type=int, help='图片宽度', default=900)
-    parser.add_argument('-H', '--height', type=int, help='单张图片高度', default=1200)
+    parser.add_argument('-H', '--height', type=int, help='单张图片高度', default=1600)
     
     args = parser.parse_args()
     
